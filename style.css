@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: black;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.navbar{
+    box-shadow: 0px 2px 2px 2px rgba(73, 73, 73, 0.705);
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .navdiv ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar .navdiv ul li{
+    margin: 30px;
+}
+.navbar .navdiv ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+.search{
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   position: relative;
+   margin: 0 20px;
+
+}
+.search input{
+    height: 30px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 3px;
+}
+.search-icon{
+    position: absolute;
+    margin: 10px;
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-div .txt p{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 50px;
+    color: white;
+}
+.main-div .txt p span{
+    font-size: 50px;
+    color: yellow;
+}
+.main-div .txt button{
+    margin: 0px 50px;
+    width: 200px;
+    padding: 20px;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.main-div .txt button:hover{
+    animation: pulsate 0.6s infinite;
+  background-color: #e74c3c;
+}
+@keyframes pulsate {
+    from{
+        transitionX: 100%;
+    }
+  }
+.about p{
+    margin:10px 50px;
+    color: white;
+}
+.skills{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 40px;
+    color: aliceblue;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    display: flex;                
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column;                    
+    width: 150px;                 
+    height: 150px; 
+    border-radius: 10px;
+    background-color: rgba(134, 131, 131, 0.438);
+}
+
+.card img{
+    margin-bottom: 1rem;
+}
+.card:hover{
+    background-color: var(--clr);
+    transition: transform 0.5 ease;
+    transform: scale(1.2);
+}
+.card img{
+    width: 60px;
+    height:60px;
+    transition: transform 0.5s ease; 
+}
+.card p{
+    text-align: center;
+    color: white;
+}
+.glry{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    width: calc(100% - 2rem)!important;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.glry img{
+    width: calc((100% / 3) - (2rem / 3));
+    transition: transform 0.5s ease;
+}
+.glry img:hover{
+    transform: scale(1.1); 
+    padding: 10px;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: yellow;
+    font-weight: 700;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+#main-exp{
+    width: 100%;
+    background: ghostwhite!important;
+}
+.head{
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+.pragraph{
+    width: 500px;
+    display: flex;
+}
+.exp-details{
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    margin: 10px 60px;
+}
+.apna-sectoin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    background-color: black;
+}
+.apna-sectoin .aboutme{
+    width: 400px;
+    margin: 50px;
+}
+.apna-sectoin .aboutme h1{
+    color: white;
+    margin: 10  0px 0;
+}
+.apna-sectoin .aboutme p{
+    color: rgba(255, 255, 255, 0.767);
+    margin: 20px;
+}
+.apna-sectoin .aboutme button{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.apna-sectoin .mypic{
+    background-color: yellow;
+    border-radius: 1rem 10pc;
+}
+.contactME{
+    background-color: rgba(14, 13, 13, 0.651);
+    margin-top: 1rem;
+}
+.contactME h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+.add{
+    display: flex;
+    justify-content: center;
+}
+.add div{
+    margin:20px 50px;
+    color: white;
+}
+.add div i{
+    color: blue;
+}
